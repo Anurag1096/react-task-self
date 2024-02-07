@@ -1,9 +1,9 @@
 import React,{ createContext,useState} from 'react'
 
-const expandableContext=createContext()
+export const ExpandableContext=createContext(null)
 function Expandable({children}) {
     const [expand,setExpand]=useState<boolean>(false)
-    const {Provider} = expandableContext
+    const {Provider} = ExpandableContext
     const contextValue = { expand, setExpand };  
     return (
     <Provider value={contextValue}>
