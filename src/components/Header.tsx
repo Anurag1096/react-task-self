@@ -5,7 +5,7 @@ function Header() {
     console.log("This is log",expand)
     
   return (
-    <div>
+    <div className=' text-red-600'>
         lksdjflksjf
     </div>
   )
